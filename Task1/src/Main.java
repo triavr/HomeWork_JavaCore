@@ -1,6 +1,6 @@
 /*Создать двумерный массив  из случайных
- целых чисел. Вывести массив на экран. После на отдельной
- строке вывести на экран значение максимального  и минимальногои элемента этого массива
+ целых чисел. Вывести массив на экран. Вывести на экран максимальное,
+ минимальное и среднее значение элемента  массива
  */
 public class Main {
     public static void main(String[] args) {
@@ -21,18 +21,18 @@ public class Main {
 
         }
         System.out.println();
-        int counter = 0;
+        int count = 0;
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
-                if (counter < m[i][j]) {
-                    counter = m[i][j];
+                if (count < m[i][j]) {
+                    count = m[i][j];
                 }
 
             }
 
         }
         System.out.println();
-        int min = counter;
+        int min = count;
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
                 if (min > m[i][j]) {
@@ -60,8 +60,8 @@ public class Main {
 
 
 
-        System.out.println("Max значение элемента массива = " +counter);
-        System.out.println("Min значение элемента массива = " +min);
+        System.out.println("Max значение массива = " +count);
+        System.out.println("Min значение массива = " +min);
         System.out.println("Среднее = " + avg);
     }
 
